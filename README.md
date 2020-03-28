@@ -1,4 +1,4 @@
-# js-sequence-diagram
+# js-seq-viewer
 
 ## Introduction
 
@@ -22,6 +22,10 @@ jsv -f {sequence file path}
 
 It launch a web service and open the view in the default browser, when you are editing the sequence file,
 the change reflects to the browser instantly when you save your file.
+
+
+<img src="https://github.com/xavierchow/asset/blob/master/js-seq-viewer/snapshot.gif" height="450">
+
 
 
 # License
