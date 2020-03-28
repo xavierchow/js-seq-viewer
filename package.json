@@ -9,8 +9,17 @@
   "bin": {
     "jsv": "./index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xavierchow/js-seq-viewer.git"
+  },
+  "keywords": [
+    "js-sequence-diagram",
+    "preview"
+  ],
   "author": "xavierchow",
   "license": "MIT",
+  "homepage": "https://github.com/xavierchow/js-seq-viewer/blob/master/README.md",
   "dependencies": {
     "commander": "^5.0.0",
     "express": "^4.17.1",
