@@ -1,4 +1,5 @@
 
+// reverse the epoch to make it easy to distinguish
 function reverseString(str) {
   str = '' + str;
   var splitString = str.split('');
