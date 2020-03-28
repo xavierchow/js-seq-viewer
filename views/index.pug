@@ -1,0 +1,27 @@
+html
+  head
+    title js-sequence
+    script(src="jquery-3.4.1.min.js")
+    script(src="underscore-min.js")
+    script(src="raphael-min.js")
+    script(src="sequence-diagram-min.js")
+    script(src="browser.min.js")
+    script(src="/js/main.js")
+    script.
+        const ws = new WebSocket('ws://127.0.0.1:#{port}/ws');
+        ws.onopen = _ => {
+          ws.send('ws ready');
+        };
+        ws.onmessage = e => {
+          if (e.data === 'changed') {
+            console.log('e = %j\n', e);
+            $(location).attr('href','/');
+          }
+        };
+
+  body
+    div#diagram #{payload}
+    div#btnGroup
+      button#svg(type="button") Save as SVG
+      button#png(type="button") Save as PNG
+
