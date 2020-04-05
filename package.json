@@ -1,6 +1,6 @@
 {
   "name": "js-seq-viewer",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "render you sequence diagram",
   "main": "index.js",
   "scripts": {
