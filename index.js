@@ -4,7 +4,7 @@ const program = require('commander');
 const { startServer } = require('./lib/server');
 
 program
-  .version('1.0.1')
+  .version('1.0.3')
   .option('-f, --file [file]', 'sequence file')
   .parse(process.argv);
 
