@@ -21,7 +21,12 @@ html
 
   body
     div#diagram #{payload}
+    div#orig(style="display:none") #{payload}
     div#btnGroup
       button#svg(type="button") Save as SVG
       button#png(type="button") Save as PNG
+    div#themeGroup
+      button#hand(type="button") Handwrite
+      button#simple(type="button") Simple
+    div.theme(style="display:none")= theme
 

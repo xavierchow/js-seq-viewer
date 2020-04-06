@@ -1,4 +1,3 @@
-
 // reverse the epoch to make it easy to distinguish
 function reverseString(str) {
   str = '' + str;
@@ -8,7 +7,7 @@ function reverseString(str) {
 }
 
 $(document).ready(function() {
-  var options = {theme: 'hand'};
+  var options = {theme: $('.theme').text() || 'hand'};
   $("#diagram").sequenceDiagram(options);
 
   var svgsaver = new SvgSaver({attrs: true});
@@ -22,4 +21,14 @@ $(document).ready(function() {
     }
   });
 
+  $("#themeGroup").click(function (e) {
+    if (e.target === document.getElementById("hand")) {
+      $("#diagram").text($("#orig").text());
+      $("#diagram").sequenceDiagram({ theme: 'hand' });
+    }
+    if (e.target === document.getElementById("simple")) {
+      $("#diagram").text($("#orig").text());
+      $("#diagram").sequenceDiagram({ theme: 'simple' });
+    }
+  });
 });
